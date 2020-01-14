@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Netty/Codec/HTTP
+Automatic-Module-Name: io.netty.codec.http
+Implementation-Version: 4.1.45.Final-SNAPSHOT
+Built-By: byron
+Implementation-Vendor-Id: io.netty
+Build-Jdk: 1.8.0_232
+Implementation-URL: https://netty.io/netty-codec-http/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: The Netty Project
+

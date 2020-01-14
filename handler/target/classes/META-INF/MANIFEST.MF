@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Netty/Handler
+Automatic-Module-Name: io.netty.handler
+Implementation-Version: 4.1.45.Final-SNAPSHOT
+Built-By: byron
+Implementation-Vendor-Id: io.netty
+Build-Jdk: 1.8.0_232
+Implementation-URL: https://netty.io/netty-handler/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: The Netty Project
+

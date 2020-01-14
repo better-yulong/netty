@@ -1,0 +1,112 @@
+# Created at 2020-01-14T10:47:39.248
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 15360K->2550K(17920K)] 15360K->2811K(58880K), 0.0031925 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:39.503
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 17910K->2528K(33280K)] 18171K->3899K(74240K), 0.0038293 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:39.791
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 33248K->2544K(33280K)] 34619K->5174K(74240K), 0.0062093 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] '.
+
+# Created at 2020-01-14T10:47:39.925
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 33264K->2528K(64000K)] 35894K->5326K(104960K), 0.0245290 secs] [Times: user=0.00 sys=0.00, real=0.03 secs] '.
+
+# Created at 2020-01-14T10:47:40.376
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 63968K->2544K(64000K)] 66766K->5443K(104960K), 0.0033747 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:44.552
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 63984K->4582K(126464K)] 66883K->8302K(167424K), 0.0067298 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:50.466
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 126438K->2800K(127488K)] 130158K->8464K(168448K), 0.0090895 secs] [Times: user=0.00 sys=0.01, real=0.01 secs] '.
+
+# Created at 2020-01-14T10:47:52.587
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 124656K->1088K(249344K)] 130320K->7175K(290304K), 0.0043957 secs] [Times: user=0.00 sys=0.01, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:53.168
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (System.gc()) [PSYoungGen: 61868K->800K(249344K)] 67956K->7473K(290304K), 0.0056242 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] '.
+
+# Created at 2020-01-14T10:47:53.205
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[Full GC (System.gc()) [PSYoungGen: 800K->0K(249344K)] [ParOldGen: 6673K->5128K(40960K)] 7473K->5128K(290304K), [Metaspace: 18066K->18066K(1064960K)], 0.0379698 secs] [Times: user=0.03 sys=0.01, real=0.03 secs] '.
+
+# Created at 2020-01-14T10:47:53.309
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (System.gc()) [PSYoungGen: 7785K->32K(248832K)] 12914K->5160K(289792K), 0.0009323 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:53.329
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[Full GC (System.gc()) [PSYoungGen: 32K->0K(248832K)] [ParOldGen: 5128K->4364K(40960K)] 5160K->4364K(289792K), [Metaspace: 18068K->18068K(1064960K)], 0.0195799 secs] [Times: user=0.03 sys=0.00, real=0.02 secs] '.
+
+# Created at 2020-01-14T10:47:54.218
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 243200K->4413K(249344K)] 247564K->8785K(290304K), 0.0041687 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:54.463
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 247613K->1264K(313856K)] 251985K->6892K(354816K), 0.0031054 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] '.
+
+# Created at 2020-01-14T10:47:54.737
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 308976K->1664K(313856K)] 314604K->7324K(354816K), 0.0033658 secs] [Times: user=0.00 sys=0.01, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:54.932
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 309376K->896K(314368K)] 315036K->7124K(355328K), 0.0029620 secs] [Times: user=0.01 sys=0.00, real=0.01 secs] '.
+
+# Created at 2020-01-14T10:47:55.191
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 309120K->1440K(314368K)] 315348K->7732K(355328K), 0.0031549 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:55.329
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 309664K->1248K(313344K)] 315956K->7884K(354304K), 0.0019870 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:55.536
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 309472K->1312K(313856K)] 316108K->8228K(354816K), 0.0020713 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:55.719
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 309536K->928K(314880K)] 316452K->8180K(355840K), 0.0017713 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:55.917
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 310176K->640K(310272K)] 317428K->8268K(351232K), 0.0025774 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:56.107
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 309888K->768K(314368K)] 317516K->8412K(355328K), 0.0014051 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:47:56.276
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 310016K->288K(295424K)] 317660K->7956K(336384K), 0.0012965 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:48:10.218
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (Allocation Failure) [PSYoungGen: 295200K->966K(282112K)] 302868K->8650K(323072K), 0.0029299 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] '.
+
+# Created at 2020-01-14T10:48:10.238
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[GC (System.gc()) [PSYoungGen: 10583K->544K(286208K)] 18268K->8692K(327168K), 0.0067613 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] '.
+
+# Created at 2020-01-14T10:48:10.288
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[Full GC (System.gc()) [PSYoungGen: 544K->0K(286208K)] [ParOldGen: 8148K->6080K(40960K)] 8692K->6080K(327168K), [Metaspace: 21614K->21614K(1069056K)], 0.0495152 secs] [Times: user=0.05 sys=0.00, real=0.05 secs] '.
+
+# Created at 2020-01-14T10:48:10.355
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Heap'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command 'Heap'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-01-14T10:48:10.355
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream ' PSYoungGen      total 286208K, used 7866K [0x00000000ec700000, 0x00000000ff600000, 0x0000000100000000)'.
+
+# Created at 2020-01-14T10:48:10.355
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '  eden space 281088K, 2% used [0x00000000ec700000,0x00000000eceae8c0,0x00000000fd980000)'.
+
+# Created at 2020-01-14T10:48:10.356
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '  from space 5120K, 0% used [0x00000000fec80000,0x00000000fec80000,0x00000000ff180000)'.
+
+# Created at 2020-01-14T10:48:10.356
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '  to   space 4608K, 0% used [0x00000000ff180000,0x00000000ff180000,0x00000000ff600000)'.
+
+# Created at 2020-01-14T10:48:10.356
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream ' ParOldGen       total 40960K, used 6080K [0x00000000c5400000, 0x00000000c7c00000, 0x00000000ec700000)'.
+
+# Created at 2020-01-14T10:48:10.356
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '  object space 40960K, 14% used [0x00000000c5400000,0x00000000c59f0028,0x00000000c7c00000)'.
+
+# Created at 2020-01-14T10:48:10.356
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream ' Metaspace       used 21653K, capacity 22050K, committed 22272K, reserved 1069056K'.
+
+# Created at 2020-01-14T10:48:10.356
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '  class space    used 3089K, capacity 3209K, committed 3328K, reserved 1048576K'.
+
