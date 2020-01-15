@@ -85,7 +85,7 @@ public final class EchoClient {
 }
 
 /**
- * 上面代码添加 p.addLast(new LoggingHandler(LogLevel.INFO));发起请求可打印如下详细日志：
+ * 上面代码添加 p.addLast(new LoggingHandler(LogLevel.INFO));发起请求方可打印如下详细日志：
  *
 15:53:34.586 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3] REGISTERED
 15:53:34.588 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3] CONNECT: /127.0.0.1:8007

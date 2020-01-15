@@ -65,7 +65,7 @@ public final class EchoServer {
                      if (sslCtx != null) {
                          p.addLast(sslCtx.newHandler(ch.alloc()));
                      }
-                     //p.addLast(new LoggingHandler(LogLevel.INFO));
+                     p.addLast(new LoggingHandler(LogLevel.INFO));
                      p.addLast(serverHandler);
                  }
              });
@@ -82,3 +82,33 @@ public final class EchoServer {
         }
     }
 }
+/**
+客户端请求后服务接收到“Hello, Netty”日志如下：
+18:17:02.052 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xcf89a579] REGISTERED
+18:17:02.055 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xcf89a579] BIND: 0.0.0.0/0.0.0.0:8007
+18:17:02.057 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xcf89a579, L:/0:0:0:0:0:0:0:0:8007] ACTIVE
+18:17:13.213 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xcf89a579, L:/0:0:0:0:0:0:0:0:8007] READ: [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220]
+18:17:13.214 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xcf89a579, L:/0:0:0:0:0:0:0:0:8007] READ COMPLETE
+18:17:13.247 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] REGISTERED
+18:17:13.247 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] ACTIVE
+18:17:13.257 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] READ: 12B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 2c 20 4e 65 74 74 79             |Hello, Netty    |
++--------+-------------------------------------------------+----------------+
+Server received：Hello, Netty
+18:17:13.257 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] WRITE: 12B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 2c 20 4e 65 74 74 79             |Hello, Netty    |
++--------+-------------------------------------------------+----------------+
+18:17:13.258 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] READ COMPLETE
+18:17:13.258 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] FLUSH
+18:17:13.259 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] READ COMPLETE
+18:17:13.259 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 - R:/127.0.0.1:58220] FLUSH
+18:17:13.259 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 ! R:/127.0.0.1:58220] INACTIVE
+18:17:13.259 [nioEventLoopGroup-3-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0xd149e4f5, L:/127.0.0.1:8007 ! R:/127.0.0.1:58220] UNREGISTERED
+
+*/
