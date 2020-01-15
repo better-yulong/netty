@@ -24,6 +24,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
@@ -65,7 +67,7 @@ public final class EchoClient {
                      if (sslCtx != null) {
                          p.addLast(sslCtx.newHandler(ch.alloc(), HOST, PORT));
                      }
-                     //p.addLast(new LoggingHandler(LogLevel.INFO));
+                     p.addLast(new LoggingHandler(LogLevel.INFO)); //fix001-start-byron:print netty client detail log(see last log)
                      p.addLast(new EchoClientHandler());
                  }
              });
@@ -81,3 +83,21 @@ public final class EchoClient {
         }
     }
 }
+
+/**
+ * 上面代码添加 p.addLast(new LoggingHandler(LogLevel.INFO));发起请求可打印如下详细日志：
+ *
+15:53:34.586 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3] REGISTERED
+15:53:34.588 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3] CONNECT: /127.0.0.1:8007
+15:53:34.591 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3, L:/127.0.0.1:58166 - R:/127.0.0.1:8007] ACTIVE
+15:53:34.592 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3, L:/127.0.0.1:58166 - R:/127.0.0.1:8007] WRITE: 12B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 65 6c 6c 6f 2c 20 4e 65 74 74 79             |Hello, Netty    |
++--------+-------------------------------------------------+----------------+
+15:53:34.597 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3, L:/127.0.0.1:58166 - R:/127.0.0.1:8007] FLUSH
+15:53:34.598 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3, L:/127.0.0.1:58166 - R:/127.0.0.1:8007] CLOSE
+15:53:34.598 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3, L:/127.0.0.1:58166 ! R:/127.0.0.1:8007] INACTIVE
+15:53:34.598 [nioEventLoopGroup-2-1] INFO  i.n.handler.logging.LoggingHandler - [id: 0x603c24e3, L:/127.0.0.1:58166 ! R:/127.0.0.1:8007] UNREGISTERED
+*/
